@@ -5,35 +5,47 @@
 
 <section id="home" class="content">
   <div>
-    <div class="backgroundDark"></div>
-    <div class="backgroundSecondary"></div>
-    <div class="backgroundPrimaryDark"></div>
-    <div class="backgroundFour"></div>
+    <app-triangle borderTop='30vh solid #FF00CA' borderRight="100vw solid transparent"></app-triangle>
+    <app-triangle borderTop='90vh solid #c30ce894' borderRight="100vw solid transparent"></app-triangle>
+    <app-triangle borderTop='29vh solid rgb(75, 0, 125)' borderLeft="50vw solid transparent"></app-triangle>
+    <app-triangle borderBottom='32vh solid transparent' borderRight="100vw solid #c30ce894"></app-triangle>
   </div>
   <div class="greeting">
     <h1>Hello, I'm Jon</h1>
+    <app-scroll-text></app-scroll-text>
     <div id=mouse_body>
         <div id=mouse_wheel></div>
     </div>
   </div>
- 
- 
 </section>
+
 
 <section id="about" class="content">
   <div>
-    <div class="aboutBackgroundOne"></div>
-    <div class="aboutBackgroundTwo"></div>
-    <div class="aboutBackgroundThree"></div>
+    <app-triangle top="50%" left="0%" borderBottom='59vh solid rgb(255, 121, 176)' borderLeft="100vw solid transparent"></app-triangle>
+    <app-triangle borderTop='20vh solid rgb(75, 0, 125)' borderLeft="75vw solid transparent"></app-triangle>
+    <app-triangle borderTop='25vh solid rgb(240, 230, 246)' borderRight="100vw solid transparent"></app-triangle>
   </div>
   <div class="aboutContent">
-    <div class="aboutTitle">
-      <h2>About Me</h2>
+    <div class="innerAboutWrapper">
+      <div class="aboutTitle">
+        <h2>About Me</h2>
+      </div>
+      <div class="aboutBody">
+        <div class="leftContent">
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vel optio quae molestias ipsum cumque, eius delectus nostrum nisi aliquam non atque excepturi placeat ipsa officia sit, at dolorem? Eos?</span>
+          <hr>
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vel optio quae molestias ipsum cumque, eius delectus nostrum nisi aliquam non atque excepturi placeat ipsa officia sit, at dolorem? Eos?</span>
+          <hr>
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vel optio quae molestias ipsum cumque, eius delectus nostrum nisi aliquam non atque excepturi placeat ipsa officia sit, at dolorem? Eos?</span>
+        </div>
+        <div class="rightContent"></div>
+      </div>
     </div>
   </div>
 </section>
 
-
+<!--
 <section id="project" class="content">
   <div>
     <div class="projectBackgroundOne"></div>
@@ -41,4 +53,5 @@
     <div class="projectBackgroundThree"></div>
     <div class="projectBackgroundFour"></div>
   </div>
-</section>
+</section> -->
+
