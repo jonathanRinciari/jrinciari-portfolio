@@ -1,0 +1,5 @@
+<ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" >
+    <div ngxSlickItem *ngFor="let item of items" class="slide">
+          <span>{{item}}</span>
+    </div>
+</ngx-slick>
