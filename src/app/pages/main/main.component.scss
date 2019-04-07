@@ -1,0 +1,234 @@
+@import 'src/variables';
+
+
+.backgroundDark {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -1;
+  border-top: 70vh solid #FF00CA;
+  border-right: 50vw solid transparent
+}
+
+.backgroundSecondary {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  border-top: 64vh solid $secondary;
+  border-right: 90vw solid transparent
+}
+
+.backgroundPrimaryDark {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  right: 0px;
+  border-top: 29vh solid $misc;
+  border-left: 50vw solid transparent;
+}
+
+.backgroundSecondaryAlt {
+  position: absolute;
+  width: 0px;
+  left: 0px;
+  height: 0px;
+  z-index: -2;
+  border-bottom: 32vh solid transparent;
+  border-right: 100vw solid $secondary;
+}
+
+.backgroundTertiary {
+  position: absolute;
+  width: 0px;
+  right: 0;
+  height: 0px;
+  z-index: -3;
+  border-top: 32vh solid transparent;
+  border-right: 110vw solid #FF00CA;
+}
+
+nav {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.greeting {
+  min-height: 75vh;
+  min-width: 320px;
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-behavior: smooth;
+  margin: auto;
+  flex: 0 1 auto;
+  padding: 5em 1em;
+
+
+  h1 {
+    font-size: 72px;
+    margin-bottom: 8rem;
+    font-weight: 600;
+    color: #4b007d;
+    text-align: center;
+  }
+}
+
+#mouse_body {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $misc;
+  border-radius: 32px;
+  height: 60px;
+  width: 35px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+}
+
+#mouse_wheel {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $misc;
+  border-radius: 8px;
+  background-color: $misc;
+  /* position property required to play animation  */
+  position: relative; 
+  height: 3px;
+  width: 3px;
+  /* to center wheel in mouse body */
+  margin: 0 auto; 
+  animation: wheel_animation 1.5s linear infinite;
+}
+
+/* include use -moz-, -webkit-, or -o- for respective browser type*/
+@keyframes wheel_animation { 
+  0% {
+    opacity: 0;
+    top: 2px;
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 33px;
+  }
+}
+
+
+.content {
+  position: relative;
+  box-sizing: inherit;
+}
+
+.aboutContent {
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+  margin: auto;
+  flex: 0 1 auto;
+  padding: 5em 1em;
+
+  .aboutTitle {
+    h2 {
+      box-sizing: border-box;
+      font-size: 24px;
+      color: rgb(198, 0, 85);
+      font-weight: bold;
+      margin: 0px 0px 32px;
+    }
+  }
+}
+
+.aboutBackgroundOne {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  bottom: 0px;
+  border-bottom: 50vh solid rgb(255, 121, 176);
+  border-right: 50vw solid transparent;
+}
+
+.aboutBackgroundTwo {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  right: 0px;
+  border-top: 20vh solid rgb(75, 0, 125);
+  border-left: 75vw solid transparent;
+}
+
+.aboutBackgroundThree {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  border-top: 25vh solid rgb(240, 230, 246);
+  border-right: 100vw solid transparent;
+}
+
+.backgroundFour {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 20vh solid rgb(240, 230, 246);
+  border-left: 100vw solid transparent;
+}
+
+.projectBackgroundOne {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  right: 0px;
+  border-top: 80vh solid rgb(255, 121, 176);
+  border-left: 100vw solid transparent;
+}
+
+.projectBackgroundTwo {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  right: 0px;
+  border-top: 50vh solid rgb(255, 255, 255);
+  border-left: 50vw solid transparent;
+}
+
+.projectBackgroundThree {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 25vh solid rgb(75, 0, 125);
+  border-left: 75vw solid transparent;
+}
+
+.projectBackgroundFour {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  z-index: -2;
+  bottom: 0px;
+  border-bottom: 25vh solid rgb(240, 230, 246);
+  border-right: 100vw solid transparent;
+}
