@@ -21,6 +21,27 @@ nav {
   flex: 0 1 auto;
   padding: 5em 1em;
 
+  .socialWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+
+    i {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      color: #4b007d;
+      cursor: pointer;
+      transition: color ease 400ms;
+    }
+
+    i:hover {
+      color: #c30ce894;
+    }
+  }
+
 
   h1 {
     font-size: 72px;
