@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickModule } from 'ngx-slick';
-
+import { NgTippyModule } from 'angular-tippy';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
 import { HeaderComponent } from './pages/header/header/header.component';
@@ -18,6 +18,7 @@ import { ScrollTextComponent } from './components/scrollText/scroll-text/scroll-
   ],
   imports: [
     BrowserModule,
+    NgTippyModule,
     SlickModule.forRoot()
   ],
   providers: [],
