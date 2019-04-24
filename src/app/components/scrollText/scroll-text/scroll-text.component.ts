@@ -21,13 +21,9 @@ export class ScrollTextComponent implements OnInit {
     'Angular',
     'PWA',
     'Mobile',
-    'Designer',
     'Typescript',
-    'React',
     'React-Native',
     'Native-Script',
-    'Writter',
-    'Teacher',
     'Contributer'
   ];
 
