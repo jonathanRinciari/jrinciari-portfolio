@@ -4,7 +4,8 @@
 .container {
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .scrollingHeader {
