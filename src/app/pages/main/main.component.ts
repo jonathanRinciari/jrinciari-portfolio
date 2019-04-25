@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -6,12 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  config = {
-    content: 'TEST'
-  };
+  @ViewChild('header') header: ElementRef;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  onScrollEvent(e) {
+    const item = document.getElementById('header');
+    if (e.srcElement.scrollTop > 125) {
+      item.classList.add('scrollingHeader');
+    } else {
+      item.classList.remove('scrollingHeader');
+    }
+  }
+
 
 }
