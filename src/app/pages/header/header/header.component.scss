@@ -5,8 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 10fr 4fr;
   grid-template-rows: 1fr;
-  position: relative;
-  height: 82px;
+  padding-bottom: .5rem;
   .imgWrapper {
     position: relative;
     overflow: hidden;
@@ -41,6 +40,7 @@
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: '.' 'navContent' '.';
+      
 
       span {
         grid-area: navContent;
@@ -49,6 +49,10 @@
         color: white;
         position: relative;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
     }
@@ -85,6 +89,7 @@ span:hover:after {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-left: 1rem;
     h3 {
       font-size: 2rem;
       line-height: 2rem;
