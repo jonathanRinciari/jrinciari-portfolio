@@ -1,5 +1,8 @@
-<nav>
-  <app-header></app-header>
+<div class="container" (scroll)="onScrollEvent($event)">
+
+
+<nav id="header">
+  <app-header #header></app-header>
 </nav>
 
 
@@ -38,11 +41,9 @@
       </div>
       <div class="aboutBody">
         <div class="leftContent">
-          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vel optio quae molestias ipsum cumque, eius delectus nostrum nisi aliquam non atque excepturi placeat ipsa officia sit, at dolorem? Eos?</span>
-          <hr>
-          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vel optio quae molestias ipsum cumque, eius delectus nostrum nisi aliquam non atque excepturi placeat ipsa officia sit, at dolorem? Eos?</span>
-          <hr>
-          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vel optio quae molestias ipsum cumque, eius delectus nostrum nisi aliquam non atque excepturi placeat ipsa officia sit, at dolorem? Eos?</span>
+          <p>I am a Software Engineer in New Haven, Connecticut developing beautiful websites, mobile applications, and contributing to open source.</p>
+          <p>Web Development is not just my career, but it is also my passion. I find beauty in solving problems, and engineering creative solutions.</p>
+          <p>I work as a Technical Lead at a startup in New Haven, Connecticut creating a fast, and beautiful enterprise application.</p>
         </div>
         <div class="rightContent"></div>
       </div>
@@ -60,3 +61,4 @@
   </div>
 </section> -->
 
+</div>
