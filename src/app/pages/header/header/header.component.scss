@@ -17,6 +17,7 @@
     margin-top: .5rem;
     img {
       position: absolute;
+      cursor: pointer;
       top: 0px;
       left: 0px;
       width: 100%;
@@ -40,6 +41,7 @@
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: '.' 'navContent' '.';
+      position: relative;
       
 
       span {
