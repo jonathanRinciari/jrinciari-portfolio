@@ -12,7 +12,10 @@ export class TriangleComponent implements OnInit {
   @Input() borderRight: string;
   @Input() borderBottom: string;
   @Input() borderTop: string;
+  @Input() rotate: string;
   @Input() top: string;
+  @Input() zIndex: string;
+  @Input() right: string;
   @Input() left: string;
 
   constructor(private render: Renderer2) { }
@@ -41,6 +44,19 @@ export class TriangleComponent implements OnInit {
     if (this.left) {
       this.render.setStyle(this.triangle.nativeElement, 'left', this.left);
     }
+
+    if (this.zIndex) {
+      this.render.setStyle(this.triangle.nativeElement, 'z-index', this.zIndex);
+    }
+
+    if (this.rotate) {
+      this.render.setStyle(this.triangle.nativeElement, 'transform', `rotate(${ this.rotate }deg)`);
+    }
+
+    if (this.right) {
+      this.render.setStyle(this.triangle.nativeElement, 'right', this.right);
+    }
+
   }
 
 }
