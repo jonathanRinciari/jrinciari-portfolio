@@ -1,6 +1,6 @@
 <div class="header">
-  <div class="imgWrapper">
-    <img src="../../../../assets/profile.jpg" alt="profile">
+  <div class="imgWrapper" >
+    <img (click)="onClick('home')" src="../../../../assets/profile.jpg" alt="profile">
   </div>
   <div class="gap">
     <div class="content">
@@ -10,10 +10,10 @@
   </div>
   <div class="navBar">
     <div class="navItem">
-      <span>About</span>
+      <span (click)="onClick('about')">About</span>
     </div>
     <div class="navItem">
-      <span>Projects</span>
+      <span (click)="onClick('projects')">Projects</span>
     </div>
     <div class="navItem">
       <span id="test">Writing</span>
