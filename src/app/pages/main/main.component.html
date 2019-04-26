@@ -53,7 +53,7 @@
 
 <section id="project" #projects class="content">
   <div>
-      <!-- <app-triangle right="0%" left="0%" borderTop='20vh solid rgb(75, 0, 125)' borderLeft="75vw solid transparent"></app-triangle> -->
+      <app-triangle zIndex="-5" right="-13%" top="33%" rotate="23" borderLeft='120vw solid transparent' borderBottom="68vh solid rgb(240, 230, 246)"></app-triangle>
   </div>
   <div class="aboutContent">
     <div class="innerAboutWrapper">
@@ -61,17 +61,79 @@
         <h2>Projects</h2>
       </div>
       <div class="projectBody">
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
+        <app-card
+          title="YelpApi"
+          description="Nativescript plugin built using mobile Yelp libraries. Allows users to search for businesses and find reviews with a simplified API."
+          projectType="Mobile"
+          date="2018"
+          imgSrc="../../assets/yelp3.svg"
+          projectUrl="https://github.com/jonathanRinciari/nativescript-plugin-yelpapi"
+        >
+      </app-card>
+      <app-card
+          title="React Native Swipeable Cards"
+          description="Swipeable cards built using react natives animation and gesture libraries. Designed for multi-directional panning and configuration."
+          projectType="Mobile"
+          date="2018"
+          [styles]="{width: '65%'}"
+          imgSrc="../../assets/react-native.png"
+          projectUrl="https://github.com/jonathanRinciari/React-Native-Swipeable-Cards">
+      </app-card>
+      <app-card
+          title="Angular Grid Directive"
+          description="A directive based API for a 12-column responsive grid layout. Easy to get started and use!"
+          projectType="Web"
+          date="2018"
+          [styles]="{width: '75%'}"
+          imgSrc="../../assets/angular.svg"
+          projectUrl="https://github.com/jonathanRinciari/nativescript-plugin-yelpapi"
+        >
+      </app-card>
       </div>
     </div>
   </div>
 </section>
+
+<section id="writing" #writing class="content">
+    <div>
+        <app-triangle borderRight='100vw solid transparent' left="0%" top="80%" borderBottom="34vh solid rgb(75, 0, 125)"></app-triangle>
+    </div>
+    <div class="aboutContent">
+      <div class="innerAboutWrapper">
+        <div class="aboutTitle">
+          <h2>Writing</h2>
+        </div>
+        <div class="projectBody">
+          <app-card
+            title="YelpApi"
+            description="Nativescript plugin built using mobile Yelp libraries. Allows users to search for businesses and find reviews with a simplified API."
+            projectType="Mobile"
+            date="2018"
+            imgSrc="../../assets/yelp3.svg"
+            projectUrl="https://github.com/jonathanRinciari/nativescript-plugin-yelpapi"
+          >
+        </app-card>
+        <app-card
+            title="React Native Swipeable Cards"
+            description="Swipeable cards built using react natives animation and gesture libraries. Designed for multi-directional panning and configuration."
+            projectType="Mobile"
+            date="2018"
+            [styles]="{width: '65%'}"
+            imgSrc="../../assets/react-native.png"
+            projectUrl="https://github.com/jonathanRinciari/React-Native-Swipeable-Cards">
+        </app-card>
+        <app-card
+            title="Angular Grid Directive"
+            description="A directive based API for a 12-column responsive grid layout. Easy to get started and use!"
+            projectType="Web"
+            date="2018"
+            [styles]="{width: '75%'}"
+            imgSrc="../../assets/angular.svg"
+            projectUrl="https://github.com/jonathanRinciari/nativescript-plugin-yelpapi"
+          >
+        </app-card>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
