@@ -1,12 +1,11 @@
 <div class="container" (scroll)="onScrollEvent($event)">
 
-
 <nav id="header">
-  <app-header #header></app-header>
+  <app-header (scrollTo)="handleOnScroll($event)" #header></app-header>
 </nav>
 
 
-<section id="home" class="content">
+<section id="home" #home class="content">
   <div>
     <app-triangle borderTop='30vh solid #FF00CA' borderRight="100vw solid transparent"></app-triangle>
     <app-triangle borderTop='90vh solid #c30ce894' borderRight="100vw solid transparent"></app-triangle>
@@ -28,7 +27,7 @@
 </section>
 
 
-<section id="about" class="content">
+<section id="about" #about class="content">
   <div>
     <app-triangle top="50%" left="0%" borderBottom='59vh solid rgb(255, 121, 176)' borderLeft="100vw solid transparent"></app-triangle>
     <app-triangle borderTop='20vh solid rgb(75, 0, 125)' borderLeft="75vw solid transparent"></app-triangle>
@@ -51,14 +50,28 @@
   </div>
 </section>
 
-<!--
-<section id="project" class="content">
-  <div>
-    <div class="projectBackgroundOne"></div>
-    <div class="projectBackgroundTwo"></div>
-    <div class="projectBackgroundThree"></div>
-    <div class="projectBackgroundFour"></div>
-  </div>
-</section> -->
 
+<section id="project" #projects class="content">
+  <div>
+      <!-- <app-triangle right="0%" left="0%" borderTop='20vh solid rgb(75, 0, 125)' borderLeft="75vw solid transparent"></app-triangle> -->
+  </div>
+  <div class="aboutContent">
+    <div class="innerAboutWrapper">
+      <div class="aboutTitle">
+        <h2>Projects</h2>
+      </div>
+      <div class="projectBody">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
