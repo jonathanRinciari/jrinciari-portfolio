@@ -7,6 +7,9 @@ import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular
 })
 export class MainComponent implements OnInit {
   @ViewChild('header') header: ElementRef;
+  @ViewChild('about') about: ElementRef;
+  @ViewChild('projects') projects: ElementRef;
+  @ViewChild('home') home: ElementRef;
 
   constructor() { }
 
@@ -22,5 +25,8 @@ export class MainComponent implements OnInit {
     }
   }
 
-
+  handleOnScroll(e) {
+    const element = this[e].nativeElement;
+    element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+  }
 }
