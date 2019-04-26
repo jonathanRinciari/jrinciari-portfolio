@@ -7,6 +7,8 @@ import { MainComponent } from './pages/main/main.component';
 import { HeaderComponent } from './pages/header/header/header.component';
 import { TriangleComponent } from './components/triangle/triangle/triangle.component';
 import { ScrollTextComponent } from './components/scrollText/scroll-text/scroll-text.component';
+import { CardComponent } from './components/card/card.component';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ScrollTextComponent } from './components/scrollText/scroll-text/scroll-
     MainComponent,
     HeaderComponent,
     TriangleComponent,
-    ScrollTextComponent
+    ScrollTextComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     NgTippyModule,
+    TooltipModule,
     SlickModule.forRoot()
   ],
   providers: [],
