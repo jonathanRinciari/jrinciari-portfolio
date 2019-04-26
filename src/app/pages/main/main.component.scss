@@ -2,10 +2,8 @@
 
 
 .container {
+  overflow-y: auto;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
 .scrollingHeader {
@@ -17,7 +15,7 @@ nav {
   background: transparent;
   position: absolute;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
   transition: all ease 400ms;
 
 }
@@ -125,6 +123,7 @@ nav {
   justify-content: flex-start;
   scroll-behavior: smooth;
   margin: auto;
+  z-index: 1;
   flex: 0 1 auto;
   padding: 5em 1em;
 
@@ -134,7 +133,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    z-index: -2;
     .aboutTitle {
       h2 {
         box-sizing: border-box;
@@ -176,43 +174,28 @@ nav {
   }
 }
 
-// .projectBackgroundOne {
-//   position: absolute;
-//   width: 0px;
-//   height: 0px;
-//   z-index: -2;
-//   right: 0px;
-//   border-top: 80vh solid rgb(255, 121, 176);
-//   border-left: 100vw solid transparent;
-// }
+.card {
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  top: 0px;
+  height: 100%;
+  cursor: default;
+  padding: 0px;
+  border-radius: 8px;
+  transition: all 0.25s ease 0s;
+  height: 200px;
+  width: 100%
+}
 
-// .projectBackgroundTwo {
-//   position: absolute;
-//   width: 0px;
-//   height: 0px;
-//   z-index: -2;
-//   right: 0px;
-//   border-top: 50vh solid rgb(255, 255, 255);
-//   border-left: 50vw solid transparent;
-// }
+.card:hover {
+  top: 20px;
+}
 
-// .projectBackgroundThree {
-//   position: absolute;
-//   width: 0px;
-//   height: 0px;
-//   z-index: -2;
-//   bottom: 0px;
-//   right: 0px;
-//   border-bottom: 25vh solid rgb(75, 0, 125);
-//   border-left: 75vw solid transparent;
-// }
-
-// .projectBackgroundFour {
-//   position: absolute;
-//   width: 0px;
-//   height: 0px;
-//   z-index: -2;
-//   bottom: 0px;
-//   border-bottom: 25vh solid rgb(240, 230, 246);
-//   border-right: 100vw solid transparent;
-// }
+.projectBody {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  gap: 30px 30px;
+}
