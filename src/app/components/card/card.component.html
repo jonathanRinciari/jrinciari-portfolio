@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="innerCard">
+      <div class="projectText">
+        <span>
+          <div [ngClass]="projectType === 'Mobile' ? 'mobile-border' : 'website-border'">
+            {{title}}
+          </div>
+        </span>
+        <div class="innerText">
+          {{description}}
+        </div>
+      </div>
+      <div class="projectImage">
+        <div class="imgWrapper">
+          <img [ngStyle]="styles" [src]="imgSrc" [alt]="altTag">
+        </div>
+        <div class="projectTag">
+          <div class="logos">
+            <a [href]="projectUrl" target="_blank" >
+              <i tooltip="View Project" placement="bottom" show-delay="200" hide-delay="100" class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="bottomLogo" [ngClass]="projectType === 'Mobile' ? 'mobile' : 'website'">
+            {{projectType}}
+          </div>
+          
+          <div class="hide">
+            <div>
+              {{date}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
