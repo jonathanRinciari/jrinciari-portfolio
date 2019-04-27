@@ -9,6 +9,7 @@ import { TriangleComponent } from './components/triangle/triangle/triangle.compo
 import { ScrollTextComponent } from './components/scrollText/scroll-text/scroll-text.component';
 import { CardComponent } from './components/card/card.component';
 import { TooltipModule } from 'ng2-tooltip-directive';
+import { BlogCardComponent } from './components/blog-card/blog-card/blog-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TooltipModule } from 'ng2-tooltip-directive';
     HeaderComponent,
     TriangleComponent,
     ScrollTextComponent,
-    CardComponent
+    CardComponent,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,
