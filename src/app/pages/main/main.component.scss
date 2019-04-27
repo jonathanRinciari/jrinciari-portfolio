@@ -27,6 +27,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   scroll-behavior: smooth;
   margin: auto;
   flex: 0 1 auto;
@@ -182,4 +183,46 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   justify-items: center;
   gap: 30px 30px;
+}
+
+.writingContent {
+  min-height: 50vh;
+  min-width: 320px;
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  margin: auto;
+  z-index: 1;
+  flex: 0 1 auto;
+  padding: 5em 1em;
+
+  .innerWritingContent {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    .writingTitle {
+      h2 {
+        box-sizing: border-box;
+        font-size: 2rem;
+        color: rgb(255, 0, 202);
+        font-weight: 600;
+        margin: 0px 0px 32px;
+        width: fit-content;
+        padding-bottom: .5rem;
+        border-bottom: 5px solid rgb(174, 102, 223);
+      }
+  }
+
+  .writingBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    gap: 30px 30px;
+  }
+}
 }
