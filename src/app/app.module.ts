@@ -10,6 +10,8 @@ import { ScrollTextComponent } from './components/scrollText/scroll-text/scroll-
 import { CardComponent } from './components/card/card.component';
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { BlogCardComponent } from './components/blog-card/blog-card/blog-card.component';
+import AOS from 'aos';
+AOS.init();
 
 @NgModule({
   declarations: [
