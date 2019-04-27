@@ -19,6 +19,22 @@ export class MainComponent implements OnInit {
 
   onScrollEvent(e) {
     const item = document.getElementById('header');
+    const item2 = document.getElementsByClassName('aboutContent')[0];
+    const item3 = document.getElementsByClassName('projectContent')[0];
+    const item4 = document.getElementsByClassName('writingContent')[0];
+
+    if (e.srcElement.scrollTop > 500) {
+      item2.classList.add('animate');
+    }
+
+    if (e.srcElement.scrollTop > 1100) {
+      item3.classList.add('animate');
+    }
+
+    if (e.srcElement.scrollTop > 2000) {
+      item4.classList.add('animate');
+    }
+
     if (e.srcElement.scrollTop > 125) {
       item.classList.add('scrollingHeader');
     } else {
