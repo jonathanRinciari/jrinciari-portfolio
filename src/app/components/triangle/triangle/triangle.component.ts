@@ -16,6 +16,7 @@ export class TriangleComponent implements OnInit {
   @Input() top: string;
   @Input() zIndex: string;
   @Input() right: string;
+  @Input() bottom: string;
   @Input() left: string;
 
   constructor(private render: Renderer2) { }
@@ -43,6 +44,10 @@ export class TriangleComponent implements OnInit {
 
     if (this.left) {
       this.render.setStyle(this.triangle.nativeElement, 'left', this.left);
+    }
+
+    if (this.bottom) {
+      this.render.setStyle(this.triangle.nativeElement, 'bottom', this.bottom);
     }
 
     if (this.zIndex) {
