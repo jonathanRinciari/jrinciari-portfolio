@@ -10,6 +10,7 @@ export class MainComponent implements OnInit {
   @ViewChild('about') about: ElementRef;
   @ViewChild('projects') projects: ElementRef;
   @ViewChild('home') home: ElementRef;
+  @ViewChild('writing') writing: ElementRef;
 
   constructor() { }
 
