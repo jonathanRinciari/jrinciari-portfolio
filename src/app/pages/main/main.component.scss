@@ -15,8 +15,8 @@ nav {
   background: transparent;
   position: absolute;
   width: 100%;
-  z-index: 1;
-  transition: all ease 400ms;
+  z-index: 5;
+  transition: all ease 500ms;
 
 }
 
@@ -124,9 +124,12 @@ nav {
   justify-content: flex-start;
   scroll-behavior: smooth;
   margin: auto;
-  z-index: 1;
+  z-index: -1;
   flex: 0 1 auto;
   padding: 5em 1em;
+  position: relative;
+  left: -71%;
+  transition: all ease-in 500ms;
 
   .innerAboutWrapper {
     min-height: 600px;
@@ -178,6 +181,44 @@ nav {
   }
 }
 
+.projectContent {
+  min-height: 50vh;
+  min-width: 320px;
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  margin: auto;
+  z-index: 1;
+  flex: 0 1 auto;
+  padding: 5em 1em;
+  position: relative;
+  left: -100%;
+  transition: all ease-in 500ms;
+
+  .innerProjectWrapper {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    .projectTitle {
+      h2 {
+        box-sizing: border-box;
+        font-size: 2rem;
+        color: rgb(255, 0, 202);
+        font-weight: 600;
+        margin: 0px 0px 32px;
+        width: fit-content;
+        padding-bottom: .5rem;
+        border-bottom: 5px solid rgb(174, 102, 223);
+      }
+  }
+}
+}
+
 .projectBody {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -195,6 +236,9 @@ nav {
   justify-content: flex-start;
   scroll-behavior: smooth;
   margin: auto;
+  transition: all ease-in 500ms;
+  position: relative;
+  left: -100%;
   z-index: 1;
   flex: 0 1 auto;
   padding: 5em 1em;
@@ -225,4 +269,21 @@ nav {
     gap: 30px 30px;
   }
 }
+}
+
+
+.footer {
+  background: #ae66df;
+  padding: .25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 2rem;
+  }
+}
+
+.animate {
+  left: 0%;
 }
