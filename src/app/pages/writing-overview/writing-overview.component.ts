@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./writing-overview.component.scss']
 })
 export class WritingOverviewComponent implements OnInit {
-
+  markdown = './markdown/ngrx.md';
   constructor() { }
 
   ngOnInit() {
