@@ -5,10 +5,9 @@ import { MainComponent } from './pages/main/main.component';
 import { WritingOverviewComponent } from './pages/writing-overview/writing-overview.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: MainComponent },
+  { path: '', component: MainComponent},
   { path: 'writing', component: WritingOverviewComponent },
-  { path: '**', redirectTo: 'home'}
+  { path: '**', redirectTo: ''}
 ];
 @NgModule({
   imports: [
