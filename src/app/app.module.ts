@@ -15,6 +15,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 import AOS from 'aos';
+import { AppRoutingModule } from './app-routing.module';
+import { WritingOverviewComponent } from './pages/writing-overview/writing-overview.component';
 AOS.init();
 
 @NgModule({
@@ -25,7 +27,8 @@ AOS.init();
     TriangleComponent,
     ScrollTextComponent,
     CardComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    WritingOverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ AOS.init();
     TooltipModule,
     BrowserAnimationsModule,
     SlickModule.forRoot(),
-    MatSidenavModule
+    MatSidenavModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
