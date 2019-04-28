@@ -10,6 +10,10 @@ import { ScrollTextComponent } from './components/scrollText/scroll-text/scroll-
 import { CardComponent } from './components/card/card.component';
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { BlogCardComponent } from './components/blog-card/blog-card/blog-card.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
 import AOS from 'aos';
 AOS.init();
 
@@ -27,7 +31,9 @@ AOS.init();
     BrowserModule,
     NgTippyModule,
     TooltipModule,
-    SlickModule.forRoot()
+    BrowserAnimationsModule,
+    SlickModule.forRoot(),
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
