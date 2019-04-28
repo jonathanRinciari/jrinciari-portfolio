@@ -1,6 +1,7 @@
 
 
   .writingCard {
+    text-decoration: none;
     box-sizing: border-box;
     padding-bottom: 32px;
     background-color: white;
@@ -35,6 +36,8 @@
     .blogText {
       box-sizing: border-box;
       margin: 16px;
+      line-height: 1.25rem;
+      text-rendering: optimizeLegibility;
     }
 
     .blogDate {
