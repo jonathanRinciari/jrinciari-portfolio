@@ -1,7 +1,9 @@
 <a class="writingCard" [href]="blogLink" target="_blank">
   <div class="writingCard">
     <h2>{{blogTitle}}</h2>
-    <img src="../../../assets/angular.svg" alt="rc">
+    <div class="blogImageWrapper">
+      <img [ngStyle]="imgStyle" [src]="blogImage" alt="rc">
+    </div>
     <div class="blogText">
       <span>{{blogDescription}}...</span>
     </div>
