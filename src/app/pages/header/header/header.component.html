@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" [ngClass]="navbarClicked ? 'navShow' : 'navHidden'">
   <div class="imgWrapper" >
     <img (click)="onClick('home')" src="../../../../assets/profile.jpg" alt="profile">
   </div>
