@@ -17,6 +17,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import AOS from 'aos';
 import { AppRoutingModule } from './app-routing.module';
 import { WritingOverviewComponent } from './pages/writing-overview/writing-overview.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpInterceptorService } from './httpClientInterceptor';
+
 AOS.init();
 
 @NgModule({
@@ -35,11 +39,15 @@ AOS.init();
     NgTippyModule,
     TooltipModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
     SlickModule.forRoot(),
     MatSidenavModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
