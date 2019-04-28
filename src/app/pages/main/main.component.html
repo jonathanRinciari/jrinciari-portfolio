@@ -3,7 +3,6 @@
   <nav id="header">
     <app-header (navbarClick)="handleOnClick()" [collapse]="shouldCollapse" (scrollTo)="handleOnScroll($event)" #header></app-header>
   </nav>
-  
 <section id="home" #home class="content">
   <div>
     <app-triangle borderTop='30vh solid rgb(240, 230, 246)' borderRight="100vw solid transparent"></app-triangle>
@@ -119,8 +118,19 @@
             blogDescription="Creating beautiful forms in angular 6 is a simple task thanks to the reactive forms module. This module out of box contains 4 basic validators required, minLength, maxLength and pattern. These are a great starting place, but they will soon fall short of meeting the acceptance criteria on that open issue."
             blogLink="https://medium.com/@rinciarijoc/angular-6-reactive-form-validation-3476e27c7a74"
             ></app-blog-card>
-          <app-blog-card blogTitle="NGRX State Management - Overview" blogDate="April 2019 - 5 Min" ></app-blog-card>
-          <app-blog-card blogTitle="Surgical Consultant to Fullstack Developer" blogDate="Dec 2015 - 4 Min"></app-blog-card>
+          <app-blog-card
+            blogTitle="NGRX State Management - Overview"
+            blogDescription="There are many benefits to having a store-driven application. There is strong tooling for debugging, ability to test various states of the application, performance, readability, removing business logic for components, and having a centralize store acting as a single source of truth."
+            blogImage="../../../assets/ngrx.svg"
+            [imgStyle]="{height: '85%'}"
+            blogDate="April 2019 - 5 Min" ></app-blog-card>
+          <app-blog-card
+            blogDescription="I graduated with a Bachelor’s Degree in Exercise Physiology 6 years ago. I originally had the intentions of going to medical school, and decided after graduating that I wanted to start my life."
+            blogTitle="Surgical Consultant to Fullstack Developer"
+            blogLink="https://medium.com/@rinciarijoc/my-journey-from-surgical-consulting-to-full-time-developer-5076d0f04fcd"
+            blogImage="../../../assets/gloves.svg"
+            blogDate="Dec 2015 - 4 Min"
+            ></app-blog-card>
         </div>
       </div>
     </div>
