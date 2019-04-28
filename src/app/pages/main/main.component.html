@@ -1,7 +1,7 @@
 
 <div class="container" (scroll)="onScrollEvent($event)">
   <nav id="header">
-    <app-header (scrollTo)="handleOnScroll($event)" #header></app-header>
+    <app-header [collapse]="shouldCollapse" (scrollTo)="handleOnScroll($event)" #header></app-header>
   </nav>
 
 <section id="home" #home class="content">
