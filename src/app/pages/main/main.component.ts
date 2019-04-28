@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
   @ViewChild('projects') projects: ElementRef;
   @ViewChild('home') home: ElementRef;
   @ViewChild('writing') writing: ElementRef;
-
+  shouldCollapse = false;
   constructor() { }
 
   ngOnInit() {
@@ -46,4 +46,13 @@ export class MainComponent implements OnInit {
     const element = this[e].nativeElement;
     element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
+
+  @HostListener('window:resize', ['$event'])
+onResize(event) {
+  if (event.target.innerWidth <= 920) {
+    this.shouldCollapse = true;
+  } else {
+    this.shouldCollapse = false;
+  }
+}
 }
