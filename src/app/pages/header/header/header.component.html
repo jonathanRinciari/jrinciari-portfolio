@@ -21,9 +21,22 @@
     </div>
   </div>
   <div *ngIf="collapse" class="navbar">
-    <div id="sandwich">
+    <div id="sandwich" (click)="handleOnClick()">
       <div class="sw-topper"></div>
       <div class="sw-bottom"></div>
+    </div>
+  </div>
+</div>
+<div class="collapsedContent" [ngClass]="navbarClicked ? 'show' : 'hide'">
+  <div class="navBarCollapse" [ngClass]="navbarClicked ? 'showBar' : 'hideBar'">
+    <div class="navItem"  [ngClass]="navbarClicked ? 'showBar' : 'hideBar'">
+      <span (click)="onClick('about')">About</span>
+    </div>
+    <div class="navItem" [ngClass]="navbarClicked ? 'showBar' : 'hideBar'">
+      <span (click)="onClick('projects')">Projects</span>
+    </div>
+    <div class="navItem" [ngClass]="navbarClicked ? 'showBar' : 'hideBar'">
+      <span (click)="onClick('writing')" id="test">Writing</span>
     </div>
   </div>
 </div>
