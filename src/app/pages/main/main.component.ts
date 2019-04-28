@@ -1,4 +1,10 @@
-import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  ElementRef,
+  HostListener
+} from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -12,14 +18,15 @@ export class MainComponent implements OnInit {
   @ViewChild('home') home: ElementRef;
   @ViewChild('writing') writing: ElementRef;
   shouldCollapse = false;
+  navbarOpen = false;
+
   constructor() {
     if (window.innerWidth <= 920) {
       this.shouldCollapse = true;
     }
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onScrollEvent(e) {
     const item = document.getElementById('header');
@@ -48,15 +55,23 @@ export class MainComponent implements OnInit {
 
   handleOnScroll(e) {
     const element = this[e].nativeElement;
-    element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
   }
 
   @HostListener('window:resize', ['$event'])
-onResize(event) {
-  if (event.target.innerWidth <= 920) {
-    this.shouldCollapse = true;
-  } else {
-    this.shouldCollapse = false;
+  onResize(event) {
+    if (event.target.innerWidth <= 920) {
+      this.shouldCollapse = true;
+    } else {
+      this.shouldCollapse = false;
+    }
   }
-}
+
+  handleOnClick() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }
