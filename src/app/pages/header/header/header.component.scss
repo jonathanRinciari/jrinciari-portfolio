@@ -6,6 +6,8 @@
   grid-template-columns: 1fr 10fr 4fr;
   grid-template-rows: 1fr;
   padding-bottom: .5rem;
+  transition: all 300ms ease;
+
   .imgWrapper {
     position: relative;
     overflow: hidden;
@@ -228,4 +230,8 @@ span:hover:after {
 .hideBar {
   opacity: 0;
   display: none;
+}
+
+.navShow {
+  background: rgb(75, 0, 125);
 }
