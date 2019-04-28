@@ -1,9 +1,9 @@
 
 <div class="container" (scroll)="onScrollEvent($event)">
   <nav id="header">
-    <app-header [collapse]="shouldCollapse" (scrollTo)="handleOnScroll($event)" #header></app-header>
+    <app-header (navbarClick)="handleOnClick()" [collapse]="shouldCollapse" (scrollTo)="handleOnScroll($event)" #header></app-header>
   </nav>
-
+  
 <section id="home" #home class="content">
   <div>
     <app-triangle borderTop='30vh solid rgb(240, 230, 246)' borderRight="100vw solid transparent"></app-triangle>
