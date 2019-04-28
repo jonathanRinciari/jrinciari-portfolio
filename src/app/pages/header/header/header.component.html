@@ -9,7 +9,7 @@
       <h4>Software Engineer</h4>
     </div>
   </div>
-  <div class="navBar">
+  <div *ngIf="!collapse" class="navBar">
     <div class="navItem">
       <span (click)="onClick('about')">About</span>
     </div>
@@ -19,5 +19,8 @@
     <div class="navItem">
       <span (click)="onClick('writing')" id="test">Writing</span>
     </div>
+  </div>
+  <div *ngIf="collapse" class="navbar">
+    X
   </div>
 </div>
