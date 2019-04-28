@@ -12,7 +12,11 @@ export class MainComponent implements OnInit {
   @ViewChild('home') home: ElementRef;
   @ViewChild('writing') writing: ElementRef;
   shouldCollapse = false;
-  constructor() { }
+  constructor() {
+    if (window.innerWidth <= 920) {
+      this.shouldCollapse = true;
+    }
+  }
 
   ngOnInit() {
   }
