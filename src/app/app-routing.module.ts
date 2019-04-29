@@ -6,7 +6,7 @@ import { WritingOverviewComponent } from './pages/writing-overview/writing-overv
 
 const routes: Routes = [
   { path: '', component: MainComponent},
-  { path: 'writing', component: WritingOverviewComponent },
+  // { path: 'writing', component: WritingOverviewComponent },
   { path: '**', redirectTo: ''}
 ];
 @NgModule({
