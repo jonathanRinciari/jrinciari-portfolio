@@ -2,8 +2,8 @@
 
 
 .container {
-  overflow-y: auto;
-  height: 100vh;
+  // overflow-y: auto;
+  // height: 100vh;
 }
 
 .scrollingHeader {
@@ -15,8 +15,16 @@ nav {
   background: transparent;
   position: absolute;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
   transition: all ease 500ms;
+
+  app-header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+  }
 
 }
 
