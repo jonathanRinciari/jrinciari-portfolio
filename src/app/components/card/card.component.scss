@@ -149,3 +149,13 @@ i:hover {
 .website-border {
   border-bottom: 5px solid rgba(195, 12, 232, 0.58);
 }
+
+@media (max-width: 400px) {
+  .projectImage {
+    width: calc(100px) !important;
+  }
+
+  .projectText {
+    width: calc(100% - 100px) !important;
+  }
+}
