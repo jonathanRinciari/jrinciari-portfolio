@@ -34,9 +34,6 @@ This is the client side database which reflects the current state of the applica
 
 The `store` is composed of smaller feature states which gives the ability for components to only being listening to the relevant store(s). 
 
-![](Untitled-cd1aff9e-694b-4bbf-955c-f1fed724ab0e.png)
-
-How a store acts as the single source of truth. @ngrx official documents
 
 ### Reducers
 
