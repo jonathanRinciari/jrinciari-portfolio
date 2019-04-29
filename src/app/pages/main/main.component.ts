@@ -56,7 +56,7 @@ export class MainComponent implements OnInit {
   handleOnScroll(e) {
     const element = this[e].nativeElement;
     element.scrollIntoView({
-      behavior: 'smooth',
+      // behavior: 'smooth',
       block: 'start',
       inline: 'nearest'
     });
