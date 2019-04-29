@@ -22,9 +22,10 @@ export class ScrollTextComponent implements OnInit {
     'PWA',
     'Mobile',
     'Typescript',
-    'React-Native',
-    'Native-Script',
-    'Contributer'
+    'React',
+    'NativeScript',
+    'Contributer',
+    'React Native'
   ];
 
   constructor() { }
