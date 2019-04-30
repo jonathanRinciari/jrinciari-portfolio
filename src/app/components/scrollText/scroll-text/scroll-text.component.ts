@@ -10,7 +10,7 @@ export class ScrollTextComponent implements OnInit {
     'slidesToShow': 1,
     'slidesToScroll': 1,
     'vertical': true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2200,
     infinite: true,
     autoplay: true,
     arrows: false
