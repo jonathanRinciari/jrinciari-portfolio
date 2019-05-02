@@ -5,5 +5,4 @@ import { Component, HostListener } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-}
+export class AppComponent {}
