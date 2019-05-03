@@ -12,6 +12,7 @@ import { TooltipModule } from 'ng2-tooltip-directive';
 import { BlogCardComponent } from './components/blog-card/blog-card/blog-card.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 import AOS from 'aos';
@@ -38,6 +39,7 @@ AOS.init();
     BrowserModule,
     NgTippyModule,
     TooltipModule,
+    MatProgressSpinnerModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
