@@ -47,9 +47,9 @@ export class MainComponent implements OnInit {
     }
 
     if (e.srcElement.scrollTop > 125) {
-      item.classList.add('scrollingHeader');
+      header.classList.add('scrollingHeader');
     } else {
-      item.classList.remove('scrollingHeader');
+      header.classList.remove('scrollingHeader');
     }
   }
 
