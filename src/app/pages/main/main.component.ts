@@ -32,7 +32,7 @@ export class MainComponent implements OnInit {
     const header = document.getElementById('header');
     const about = document.getElementsByClassName('aboutContent')[0];
     const project = document.getElementsByClassName('projectContent')[0];
-    const item4 = document.getElementsByClassName('writingContent')[0];
+    const writing = document.getElementsByClassName('writingContent')[0];
 
     if (e.srcElement.scrollTop > 500) {
       item2.classList.add('animate');
