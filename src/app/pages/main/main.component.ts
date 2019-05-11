@@ -17,8 +17,8 @@ export class MainComponent implements OnInit {
   @ViewChild('projects') projects: ElementRef;
   @ViewChild('home') home: ElementRef;
   @ViewChild('writing') writing: ElementRef;
-  shouldCollapse = false;
-  navbarOpen = false;
+  public shouldCollapse = false;
+  public navbarOpen = false;
 
   constructor() {
     if (window.innerWidth <= 920) {
