@@ -39,7 +39,7 @@ export class MainComponent implements OnInit {
     }
 
     if (e.srcElement.scrollTop > 1100) {
-      item3.classList.add('animate');
+      project.classList.add('animate');
     }
 
     if (e.srcElement.scrollTop > 2000) {
