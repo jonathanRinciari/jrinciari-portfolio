@@ -14,7 +14,7 @@ import {
 export class HeaderComponent implements OnInit {
   @Output() scrollTo = new EventEmitter();
   @Input() collapse = false;
-  navbarClicked = false;
+  public navbarClicked = false;
   constructor() { }
 
   ngOnInit() {
