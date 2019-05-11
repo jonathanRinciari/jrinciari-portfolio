@@ -35,7 +35,7 @@ export class MainComponent implements OnInit {
     const writing = document.getElementsByClassName('writingContent')[0];
 
     if (e.srcElement.scrollTop > 500) {
-      item2.classList.add('animate');
+      about.classList.add('animate');
     }
 
     if (e.srcElement.scrollTop > 1100) {
