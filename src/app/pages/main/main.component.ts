@@ -11,7 +11,7 @@ import {
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
   @ViewChild('header') header: ElementRef;
   @ViewChild('about') about: ElementRef;
   @ViewChild('projects') projects: ElementRef;
@@ -25,8 +25,6 @@ export class MainComponent implements OnInit {
       this.shouldCollapse = true;
     }
   }
-
-  ngOnInit() {}
 
   onScrollEvent(e) {
     const header = document.getElementById('header');
