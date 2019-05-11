@@ -30,7 +30,7 @@ export class MainComponent implements OnInit {
 
   onScrollEvent(e) {
     const header = document.getElementById('header');
-    const item2 = document.getElementsByClassName('aboutContent')[0];
+    const abou = document.getElementsByClassName('aboutContent')[0];
     const item3 = document.getElementsByClassName('projectContent')[0];
     const item4 = document.getElementsByClassName('writingContent')[0];
 
